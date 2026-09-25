@@ -9,3 +9,5 @@ allure-report/
 *.db
 *.sqlite3
 .DS_Store
+allure-2.30.0/
+allure-cli.zip
