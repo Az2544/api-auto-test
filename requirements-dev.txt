@@ -1,5 +1,6 @@
-pytest
+﻿pytest
 httpx
 pytest-cov
 allure-pytest
-pyyamlfastapi[standard]
+pyyaml
+fastapi[standard]
