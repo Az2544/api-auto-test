@@ -1,0 +1,37 @@
+create_valid_cases:
+  - id: default_done
+    payload:
+      title: "yaml-default"
+    expected_status: 201
+    expected_done: false
+
+  - id: explicit_done_true
+    payload:
+      title: "yaml-done-true"
+      done: true
+    expected_status: 201
+    expected_done: true
+
+  - id: explicit_done_false
+    payload:
+      title: "yaml-done-false"
+      done: false
+    expected_status: 201
+    expected_done: false
+
+create_invalid_cases:
+  - id: missing_title
+    payload:
+      done: false
+    expected_status: 422
+
+  - id: title_wrong_type
+    payload:
+      title: 123
+    expected_status: 422
+
+  - id: done_wrong_type
+    payload:
+      title: "x"
+      done: "not-bool"
+    expected_status: 422
