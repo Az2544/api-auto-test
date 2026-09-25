@@ -1,0 +1,5 @@
+pytest
+httpx
+pytest-cov
+allure-pytest
+pyyaml
