@@ -11,3 +11,6 @@ allure-report/
 .DS_Store
 allure-2.30.0/
 allure-cli.zip
+allure-results/
+.coverage
+htmlcov/
