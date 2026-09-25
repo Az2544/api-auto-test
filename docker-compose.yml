@@ -1,0 +1,8 @@
+﻿services:
+  api:
+    build: .
+    container_name: api-auto-test-api
+    ports:
+      - "8000:8000"
+    environment:
+      PYTHONUNBUFFERED: "1"
